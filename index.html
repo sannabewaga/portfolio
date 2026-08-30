@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Sarthak Gaurav, Data Engineer.">
+    <title>Sarthak Gaurav | Data Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand" id="nav-name">Sarthak Gaurav</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="nav-resume-btn" class="btn btn-outline" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero section">
+        <div class="container">
+            <h1 id="hero-name">Sarthak Gaurav</h1>
+            <h2 id="hero-title" class="accent-text">Data Engineer</h2>
+            <p id="hero-tagline" class="hero-tagline">Building reliable data pipelines, analytical systems, and cloud-based data solutions.</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#" id="hero-resume-btn" class="btn btn-outline" target="_blank">Download Resume</a>
+                <a href="#" id="hero-github" class="btn btn-text" target="_blank">GitHub</a>
+                <a href="#" id="hero-linkedin" class="btn btn-text" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="data-flow">
+                    <span>Source</span> &rarr; 
+                    <span>Pipeline</span> &rarr; 
+                    <span>Lakehouse</span> &rarr; 
+                    <span>Warehouse</span> &rarr; 
+                    <span>Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-secondary-light">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p id="about-bio"></p>
+                </div>
+                <div class="about-focus">
+                    <h3>Currently focused on:</h3>
+                    <ul id="about-focus-list" class="focus-list"></ul>
+                    
+                    <h3>What I enjoy building:</h3>
+                    <ul id="about-building-list" class="focus-list"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div id="experience-container" class="timeline">
+                </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-secondary-light">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div id="skills-container" class="skills-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div id="projects-container" class="projects-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-secondary-light">
+        <div class="container dual-grid">
+            <div>
+                <h2 class="section-title">Education</h2>
+                <div id="education-container">
+                    </div>
+            </div>
+            <div>
+                <h2 class="section-title">Certifications</h2>
+                <div id="certifications-container">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Highlights & Achievements</h2>
+            <ul id="achievements-list" class="achievements-list">
+                </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-secondary-light text-center">
+        <div class="container">
+            <h2 class="section-title center">Let's Connect.</h2>
+            <p class="contact-text">Interested in data engineering, analytics, or technology? Feel free to reach out.</p>
+            <div class="contact-links">
+                <a href="#" id="contact-email" class="btn btn-primary">Email Me</a>
+                <a href="#" id="contact-linkedin" class="btn btn-outline" target="_blank">LinkedIn</a>
+                <a href="#" id="contact-github" class="btn btn-outline" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="current-year"></span> Sarthak Gaurav. Built with HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
