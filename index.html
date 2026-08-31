@@ -3,140 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Sarthak Gaurav, Data Engineer.">
+
     <title>Sarthak Gaurav | Data Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Portfolio of Sarthak Gaurav, a Data Engineer building reliable data pipelines, analytical systems, and cloud-based data solutions.">
+
+    <!-- Open Graph / social preview. If you change your name or tagline in
+         js/data.js, update these two lines to match — they can't read
+         data.js because crawlers don't run JavaScript. -->
+    <meta property="og:title" content="Sarthak Gaurav | Data Engineer">
+    <meta property="og:description" content="Building reliable data pipelines, analytical systems, and cloud-based data solutions.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-brand" id="nav-name">Sarthak Gaurav</a>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" id="nav-resume-btn" class="btn btn-outline" target="_blank">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <section id="hero" class="hero section">
-        <div class="container">
-            <h1 id="hero-name">Sarthak Gaurav</h1>
-            <h2 id="hero-title" class="accent-text">Data Engineer</h2>
-            <p id="hero-tagline" class="hero-tagline">Building reliable data pipelines, analytical systems, and cloud-based data solutions.</p>
-            
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#" id="hero-resume-btn" class="btn btn-outline" target="_blank">Download Resume</a>
-                <a href="#" id="hero-github" class="btn btn-text" target="_blank">GitHub</a>
-                <a href="#" id="hero-linkedin" class="btn btn-text" target="_blank">LinkedIn</a>
-            </div>
+    <!-- ============================== NAVIGATION ============================== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#home" class="navbar__logo" id="nav-logo">Sarthak Gaurav</a>
 
-            <div class="hero-visual">
-                <div class="data-flow">
-                    <span>Source</span> &rarr; 
-                    <span>Pipeline</span> &rarr; 
-                    <span>Lakehouse</span> &rarr; 
-                    <span>Warehouse</span> &rarr; 
-                    <span>Analytics</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section bg-secondary-light">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p id="about-bio"></p>
-                </div>
-                <div class="about-focus">
-                    <h3>Currently focused on:</h3>
-                    <ul id="about-focus-list" class="focus-list"></ul>
-                    
-                    <h3>What I enjoy building:</h3>
-                    <ul id="about-building-list" class="focus-list"></ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div id="experience-container" class="timeline">
-                </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section bg-secondary-light">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div id="skills-container" class="skills-grid">
-                </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div id="projects-container" class="projects-grid">
-                </div>
-        </div>
-    </section>
-
-    <section id="education" class="section bg-secondary-light">
-        <div class="container dual-grid">
-            <div>
-                <h2 class="section-title">Education</h2>
-                <div id="education-container">
-                    </div>
-            </div>
-            <div>
-                <h2 class="section-title">Certifications</h2>
-                <div id="certifications-container">
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="achievements" class="section">
-        <div class="container">
-            <h2 class="section-title">Highlights & Achievements</h2>
-            <ul id="achievements-list" class="achievements-list">
+            <nav class="navbar__nav" id="navbar-nav" aria-label="Primary">
+                <ul class="navbar__links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-        </div>
-    </section>
+            </nav>
 
-    <section id="contact" class="section bg-secondary-light text-center">
-        <div class="container">
-            <h2 class="section-title center">Let's Connect.</h2>
-            <p class="contact-text">Interested in data engineering, analytics, or technology? Feel free to reach out.</p>
-            <div class="contact-links">
-                <a href="#" id="contact-email" class="btn btn-primary">Email Me</a>
-                <a href="#" id="contact-linkedin" class="btn btn-outline" target="_blank">LinkedIn</a>
-                <a href="#" id="contact-github" class="btn btn-outline" target="_blank">GitHub</a>
+            <div class="navbar__actions">
+                <a href="assets/resume.pdf" class="btn btn--primary btn--small" id="nav-resume-btn" download>Download Resume</a>
+                <button class="navbar__toggle" id="navbar-toggle" aria-expanded="false" aria-controls="navbar-nav" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
-    </section>
+    </header>
 
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; <span id="current-year"></span> Sarthak Gaurav. Built with HTML, CSS & JavaScript.</p>
+    <main id="main-content">
+
+        <!-- ============================== HERO ============================== -->
+        <section id="home" class="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="eyebrow" id="hero-eyebrow">Data Engineer</p>
+                    <h1 id="hero-name">Sarthak Gaurav</h1>
+                    <p class="hero__tagline" id="hero-tagline">Building reliable data pipelines, analytical systems, and cloud-based data solutions.</p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="assets/resume.pdf" class="btn btn--secondary" id="hero-resume-btn" download>Download Resume</a>
+                        <a href="#" class="btn btn--ghost" id="hero-github-btn" target="_blank" rel="noopener">GitHub</a>
+                        <a href="#" class="btn btn--ghost" id="hero-linkedin-btn" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="hero__visual" id="hero-visual" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <!-- ============================== ABOUT ============================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <p class="eyebrow">About</p>
+                <h2>About Me</h2>
+
+                <div class="about__grid">
+                    <p class="about__bio" id="about-bio"></p>
+
+                    <div class="about__lists">
+                        <div class="about__list-block">
+                            <h3>Currently focused on</h3>
+                            <ul class="tag-list" id="about-focus"></ul>
+                        </div>
+                        <div class="about__list-block">
+                            <h3>What I enjoy building</h3>
+                            <ul class="tag-list" id="about-enjoy"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== EXPERIENCE ============================== -->
+        <section id="experience" class="section section--alt">
+            <div class="container">
+                <p class="eyebrow">Experience</p>
+                <h2>Experience</h2>
+                <div class="timeline" id="experience-list"></div>
+            </div>
+        </section>
+
+        <!-- ============================== SKILLS ============================== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <p class="eyebrow">Skills</p>
+                <h2>Skills</h2>
+                <div class="skills-grid" id="skills-list"></div>
+            </div>
+        </section>
+
+        <!-- ============================== PROJECTS ============================== -->
+        <section id="projects" class="section section--alt">
+            <div class="container">
+                <p class="eyebrow">Projects</p>
+                <h2>Featured Projects</h2>
+                <p class="section-note">Placeholder projects, shown here to demonstrate the layout — descriptions below will be replaced with real project write-ups.</p>
+                <div class="project-grid" id="projects-list"></div>
+            </div>
+        </section>
+
+        <!-- ============================== EDUCATION ============================== -->
+        <section id="education" class="section">
+            <div class="container">
+                <p class="eyebrow">Education</p>
+                <h2>Education</h2>
+                <div class="timeline timeline--education" id="education-list"></div>
+            </div>
+        </section>
+
+        <!-- ============================== CERTIFICATIONS ============================== -->
+        <section id="certifications" class="section section--alt">
+            <div class="container">
+                <p class="eyebrow">Certifications</p>
+                <h2>Certifications</h2>
+                <div class="cert-grid" id="certifications-list"></div>
+            </div>
+        </section>
+
+        <!-- ============================== ACHIEVEMENTS ============================== -->
+        <!-- This whole section is hidden automatically by main.js if the
+             "achievements" list in data.js is empty. -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <p class="eyebrow">Highlights</p>
+                <h2>Achievements</h2>
+                <ul class="achievements-list" id="achievements-list"></ul>
+            </div>
+        </section>
+
+        <!-- ============================== CONTACT ============================== -->
+        <section id="contact" class="section section--alt">
+            <div class="container contact__inner">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's connect.</h2>
+                <p class="contact__text">Interested in data engineering, analytics, or technology? Feel free to reach out.</p>
+                <div class="contact__links" id="contact-links"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p id="footer-text"></p>
+            <div class="footer__links" id="footer-links"></div>
         </div>
     </footer>
+
+    <!-- ============================== PROJECT DETAIL MODAL ============================== -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal__backdrop" id="modal-backdrop"></div>
+        <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal-dialog" tabindex="-1">
+            <button class="modal__close" id="modal-close" aria-label="Close project details">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
